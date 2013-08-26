@@ -76,7 +76,6 @@ public class MainWindow extends JFrame {
           User32.KBDLLHOOKSTRUCT lParam) {
         final boolean isKeyDown = (wParam.intValue() == WinUser.WM_KEYDOWN)
             || (wParam.intValue() == WinUser.WM_SYSKEYDOWN);
-        System.out.printf("%b, %d\n", isKeyDown, lParam.vkCode);
         switch (lParam.vkCode) {
         case WinUser.VK_CONTROL:
           modControl = (modControl & 6) | (isKeyDown ? 1 : 0);
