@@ -20,7 +20,7 @@ public class MainPanel extends JPanel {
 
   public MainPanel() {
     counter = new Counter();
-    settings = new Settings("./config.properties");
+    settings = new Settings("./config.txt");
     countLabel = new CountLabel(counter);
     add(countLabel);
     ignoreHotKeys = false;
