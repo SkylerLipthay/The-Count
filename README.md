@@ -17,4 +17,4 @@ A small Java application that helps you keep track of counting things.
 
 ## Download
 
-[Download executable Java archive (1 MB)](https://hostr.co/XJMOCNw9IPmU)
+[Download executable Java archive (1 MB)](https://hostr.co/gfhHrYQxvFNt)
