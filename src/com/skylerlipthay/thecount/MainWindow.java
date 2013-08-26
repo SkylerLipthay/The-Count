@@ -150,7 +150,6 @@ public class MainWindow extends JFrame {
 
     while (!quit) {
       // hex arguments: WM_KEYFIRST, WM_KEYLAST
-      System.out.println("in");
       int result = User32.INSTANCE.GetMessage(msg, null, 0x100, 0x109);
       if (result == -1) {
         break;
@@ -158,12 +157,8 @@ public class MainWindow extends JFrame {
         User32.INSTANCE.TranslateMessage(msg);
         User32.INSTANCE.DispatchMessage(msg);
       }
-      
-      System.out.println("out");
     }
     
-    System.out.println("goodbye");
-
     User32.INSTANCE.UnhookWindowsHookEx(hook);
   }
 
